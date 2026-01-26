@@ -1,22 +1,49 @@
-import { Preview } from "../components/Preview";
+import profilePic from "../assets/profilepic.avif";
+import SkillBadge from "../components/SkillBadge";
+import { Button } from "@/components/ui/button";
+import { WhatsappIcon } from "../components/ui/whatsapp-icon";
+import { GithubIcon } from "../components/ui/github";
+import { LinkedinIcon } from "../components/ui/linkedin";
+import { TwitterIcon } from "../components/ui/twitter";
+import { FileTextIcon } from "../components/ui/file-text";
+import { MailCheckIcon } from "../components/ui/mail-check";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../components/ui/tooltip";
 
 function Hero() {
   return (
     <>
-      <section className="h-screen w-screen flex flex-col justify-center items-center z-20">
+      <section className="mx-auto w-screen flex flex-col justify-center items-center z-20">
         {/* Dark-overlay */}
         <div className="absolute inset-0 bg-linear-to-r from-black/65 via-black/40 to-transparent -z-10"></div>
 
         {/* top-content */}
-        <div className="h-[80%] w-screen flex flex-col justify-center items-center text-center gap-6  ">
-          <h1 className="font-montserrat  text-4xl font-bold md:text-6xl px-3 md:font-extrabold  text-white">
-            Hi, I'm Hardik - <Preview></Preview>
+        <div className=" max-w-4xl flex flex-col justify-center px-2  gap-6 pt-25 ">
+          {/* img-section */}
+
+          <div
+            className="h-30  
+"
+          >
+            <img
+              src={profilePic}
+              alt="profilepic"
+              className=" h-30 w-30 rounded-full object-cover"
+            />
+          </div>
+
+          <h1 className="font-montserrat  text-4xl font-bold px-3 md:font-extrabold  text-white">
+            Hi, I'm Hardik -{" "}
+            <i className="text-gray-300">A Frontend developer</i>
           </h1>
-          <span className="px-3 text-gray-200 leading-8 text-sm md:text-base lg:text-xl max-w-2xl font-eb">
-            I build interactive websites with
-            <a
+          <div className="mt-4 max-w-lg md:max-w-4xl px-2 flex flex-wrap justify-start text-start gap-x-1.5 gap-y-2 text-base md:text-lg lg:text-xl text-neutral-200 font-eb">
+            <span>I build interactive websites with</span>
+            <SkillBadge as="a"
               target="_blank"
-              className="inline-flex items-center text-sm bg-white/5 border border-dashed border-white/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-white ml-1"
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
             >
               <div className="size-4 shrink-0">
@@ -32,11 +59,11 @@ function Hero() {
                 </svg>
               </div>
               <p className="ml-1 text-sm font-bold"> Javascript</p>
-            </a>
+            </SkillBadge>
             <span className="whitespace-pre-wrap">, </span>
-            <a
+            <SkillBadge as="a"
               target="_blank"
-              className="inline-flex items-center text-sm bg-white/5 border border-dashed border-white/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-white"
+             
               href="https://react.dev/"
             >
               <div className="size-4 shrink-0">
@@ -48,11 +75,25 @@ function Hero() {
                 </svg>
               </div>
               <p className="ml-1 text-sm font-bold">React</p>
-            </a>
+            </SkillBadge>
             <span className="whitespace-pre-wrap">, </span>
-            <a
+            <SkillBadge as="a"
+              target="_blank"              
+              href="https://nodejs.org/en"
+            >
+              <div className="size-4 shrink-0">
+                <svg viewBox="0 0 128 128">
+                  <path
+                    fill="#5fa04e"
+                    d="M63.999 0a5.617 5.617 0 0 0-2.789.744L11.445 29.646 28.852 61.58 64.592.053A8.177 8.177 0 0 0 64.003 0Zm2.316.605v.002l35.194 60.577 16.545-30.449a5.483 5.483 0 0 0-1.028-.817L91.38 15.024 66.7.754h-.007c-.12-.061-.252-.099-.378-.15Zm-1.024.248L29.417 62.616l35.579 65.278c.1-.02.198-.023.297-.05l35.653-65.624ZM10.586 30.176c-1.502 1.031-2.35 2.752-2.35 4.595v58.478c0 .93.254 1.838.684 2.645l19.34-33.293Zm108.161 1.4-16.643 30.629 17.66 30.398V34.77c0-1.15-.382-2.265-1.017-3.195zm-17.204 31.667-34.808 64.062.055-.028 50.243-29.183.004-.002c1.402-.793 2.3-2.155 2.604-3.693zm-72.718.394L9.545 96.832c.406.5.885.936 1.43 1.266l.001.004 49.702 28.866.53.305.006.002h.002c.257.151.528.266.798.372.144.054.288.104.433.146.125.037.251.062.376.089.242.051.483.088.727.108.118.01.237.01.355.01z"
+                  ></path>
+                </svg>
+              </div>
+              <p className="ml-1 text-sm font-bold">Node.js</p>
+            </SkillBadge>
+            <span className="whitespace-pre-wrap">, </span>
+            <SkillBadge as="a"
               target="_blank"
-              className="inline-flex items-center text-sm bg-white/5 border border-dashed border-white/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-white"
               href="https://tailwindcss.com/"
             >
               <div className="size-4 shrink-0">
@@ -64,11 +105,10 @@ function Hero() {
                 </svg>
               </div>
               <p className="ml-1 text-sm font-bold">Tailwind CSS</p>
-            </a>
+            </SkillBadge>
             <span className="whitespace-pre-wrap"> and </span>
-            <a
+            <SkillBadge as="a"
               target="_blank"
-              className="inline-flex items-center text-sm bg-white/5 border border-dashed border-white/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-white"
               href="https://www.mongodb.com/"
             >
               <div className="size-4 shrink-0">
@@ -171,14 +211,135 @@ function Hero() {
                   ></path>
                 </svg>
               </div>
-              <p className="ml-1 text-sm font-bold">Mongodb</p>
-            </a>
-            With focus on <b>UI</b> and <b>Animation</b> by help of Motion/GSAP.
-          </span>
-        </div>
+              <p className="ml-1 text-sm font-bold">Mongodb. </p>
+            </SkillBadge>
+            <span className="whitespace-pre-wrap">
+              With focus on{" "}
+              <b className="whitespace-pre-wrap text-yellow-300">UI</b>{" "}
+              <span className="whitespace-pre-wrap ">and</span>{" "}
+              <b className="text-yellow-300"> Animation</b>{" "}
+              <span className="whitespace-pre-wrap">by help of</span>
+              <b className="whitespace-pre-wrap text-yellow-300">
+                {" "}
+                Motion/GSAP.
+              </b>
+            </span>
+          </div>
 
-        {/* Bottom-content */}
-        <div className="h-[20%] w-screen bg-blue-800">Bambhaniya</div>
+
+
+          {/* Buttons */}
+          <div className=" w-full flex justify-start gap-x-4 px-2 font-eb font-extrabold">
+            <a href="#work">
+              <Button
+                variant="outline"
+                className=" bg-white/75 cursor-pointer "
+              >
+                <FileTextIcon />
+                Resume
+              </Button>
+            </a>
+            <a
+              href="https://wa.me/917016400658?"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="outline"
+                className="bg-black/90 text-white shadow-[inset_0_0_10px_rgba(255,255,255,0.6)] hover:shadow-[inset_0_0_15px_rgba(255,255,255,0.8)] hover:bg-black/90 hover:text-white "
+              >
+                <WhatsappIcon className="text-white" />
+                Get in Touch
+              </Button>
+            </a>
+          </div>
+         
+         
+         
+          {/* social-info */}
+
+          <div className="max-w-4xl flex justify-start px-2 text-white gap-x-4">
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <a
+                    href="https://github.com/HardikBambhaniya"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <GithubIcon />
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent
+                  side="Top"
+                  className="bg-gray-800 text-white border border-white/20 shadow-lg rounded-md px-2 py-1 text-sm absolute bottom-0 -left-8"
+                >
+                  GitHub
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <a
+                    href="https://www.linkedin.com/in/hardik-bambhaniya/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <LinkedinIcon />
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent
+                  side="Top"
+                  className="bg-gray-800 text-white border border-white/20 shadow-lg rounded-md px-2 py-1 text-sm absolute bottom-0 -left-8"
+                >
+                  Linkedin
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <a
+                    href="https://x.com/Hardik_bambh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <TwitterIcon />
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent
+                  side="Top"
+                  className="bg-gray-800 text-white border border-white/20 shadow-lg rounded-md px-2 py-1 text-sm absolute bottom-0 -left-8"
+                >
+                  Twitter/X
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <a
+                    href="mailto:hardikb181@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MailCheckIcon />
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent
+                  side="Top"
+                  className="bg-gray-800 text-white border border-white/20 shadow-lg rounded-md px-2 py-1 text-sm absolute bottom-0 -left-4"
+                >
+                  Mail
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          </div>
+        </div>
       </section>
     </>
   );
