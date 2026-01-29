@@ -26,7 +26,7 @@ export const Navbar = () => {
   return (
     <section
       className={`
-        fixed top-0 left-1/2 -translate-x-1/2 z-50
+        w-screen sm:max-w-4xl fixed top-0 left-1/2 -translate-x-1/2 z-50
         font-montserrat text-white
         
 
@@ -38,13 +38,13 @@ export const Navbar = () => {
 
         ${
           scrolled
-            ? "mt-4 scale-[0.96] shadow-lg backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl"
+            ? "mt-4 scale-[0.96] shadow-lg backdrop-blur-md bg-white/10  rounded-2xl"
             : "mt-0 scale-100 shadow-none rounded-none"
         }
       `}
     >
-      <nav className="h-12 w-screen flex items-center justify-center">
-        <ul className="flex w-full justify-evenly text-[12px] font-extrabold xs:text-[14px] md:text-[16px] lg:text-[18px]">
+      <nav className="h-12 flex items-center justify-center">
+        <ul className="px-2 w-full  flex justify-between  text-[12px] font-extrabold xs:text-[14px] md:text-[16px] lg:text-[18px]">
           <li><Link to={"/"} >Home</Link></li>
           <li><Link to={"/about"} >About Me</Link></li>
           <li><Link to={"/projects"} >Projects</Link></li>
