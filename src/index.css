@@ -17,8 +17,56 @@
   --font-eb: 'EB', poppins, sans-serif;
   --animate-star-movement-bottom: star-movement-bottom 4s linear infinite alternate;
   --animate-star-movement-top: star-movement-top 4s linear infinite alternate;
-
+--status-live: oklch(0.72 0.19 145);
+  --status-progress: oklch(0.78 0.18 85);
+  --status-planned: oklch(0.72 0.17 280);
 }
+
+@layer utilities {
+  .status {
+    border-radius: 9999px;
+    border-width: 1px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  .status-live {
+    color: var(--status-live);
+    border-color: color-mix(in oklch, var(--status-live) 40%, transparent);
+    background-color: color-mix(in oklch, var(--status-live) 12%, transparent);
+  }
+
+  .status-progress {
+    color: var(--status-progress);
+    border-color: color-mix(in oklch, var(--status-progress) 40%, transparent);
+    background-color: color-mix(in oklch, var(--status-progress) 12%, transparent);
+  }
+
+  .status-completed {
+    color: var(--status-completed);
+    border-color: color-mix(in oklch, var(--status-completed) 40%, transparent);
+    background-color: color-mix(in oklch, var(--status-completed) 12%, transparent);
+  }
+
+  .status-planned {
+    color: var(--status-planned);
+    border-color: color-mix(in oklch, var(--status-planned) 40%, transparent);
+    background-color: color-mix(in oklch, var(--status-planned) 12%, transparent);
+  }
+
+  .status-ring::before {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: inherit;
+    border: 2px solid currentColor;
+    opacity: 0.35;
+    animation: pulse-ring 1.6s ease-out infinite;
+  }
+}
+
+
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -180,6 +228,18 @@
     opacity: 0;
   }
 }
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
 
 @layer base {
   * {
