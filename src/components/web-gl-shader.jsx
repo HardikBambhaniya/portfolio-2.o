@@ -128,7 +128,7 @@ import * as THREE from "three"
     };
   }, [])
 
-  return (<canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full block" />);
+  return (<canvas ref={canvasRef} className="fixed inset-0 w-full h-screen block" />);
 }
 
 export default WebGLShader;
