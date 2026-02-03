@@ -1,3 +1,5 @@
+// This file contain code for reusable icon with tooltip used across site
+
 import { Tooltip, TooltipTrigger, TooltipContent } from "../ui/tooltip";
 
 export default function IconTooltip({

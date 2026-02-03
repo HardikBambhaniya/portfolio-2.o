@@ -1,3 +1,5 @@
+//File that contain all projects data in single place for
+
 import mmImg from "../assets/Projectsimg/mmImg.webp";
 import eaImg from "../assets/Projectsimg/eventAgency.webp";
 import skipAdImg from "../assets/Projectsimg/skip-ad.webp"

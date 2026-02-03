@@ -1,3 +1,5 @@
+// export statusbadge from this file for better reusability
+
 export const PROJECT_STATUS = {
     live: {
         label: "Live",

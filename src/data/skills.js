@@ -1,3 +1,5 @@
+//File that contain logos in single place 
+
 import jsSvg from "../assets/Svgs/jsSvg.svg";
 import tailwindSvg from "../assets/Svgs/tailwindSvg.svg";
 import mongoSvg from "../assets/Svgs/mongoSvg.svg";

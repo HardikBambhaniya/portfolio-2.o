@@ -73,35 +73,35 @@ function Hero() {
               <div className="size-4 shrink-0">
                 <img src={jsSvg} alt="js-logo" />
               </div>
-              <p className="ml-1 text-sm font-bold"> Javascript</p>
+              <p className="pl-1 text-sm font-bold">Javascript</p>
             </SkillBadge>
             <span className="whitespace-pre-wrap">, </span>
             <SkillBadge as="a" target="_blank" href="https://react.dev/">
               <div className="size-4 shrink-0">
                 <img src={reactSvg} alt="react-logo" />
               </div>
-              <p className="ml-1 text-sm font-bold">React</p>
+              <p className="pl-1 text-sm font-bold">React</p>
             </SkillBadge>
             <span className="whitespace-pre-wrap">, </span>
             <SkillBadge as="a" target="_blank" href="https://nodejs.org/en">
               <div className="size-4 shrink-0">
                 <img src={nodeSvg} alt="nodejs-logo" />
               </div>
-              <p className="ml-1 text-sm font-bold">Node.js</p>
+              <p className="pl-1 text-sm font-bold">Node.js</p>
             </SkillBadge>
             <span className="whitespace-pre-wrap">, </span>
             <SkillBadge as="a" target="_blank" href="https://tailwindcss.com/">
               <div className="size-4 shrink-0">
                 <img src={tailwindSvg} alt="tailwind-logo" />
               </div>
-              <p className="ml-1 text-sm font-bold">Tailwind CSS</p>
+              <p className="pl-1 text-sm font-bold">Tailwind CSS</p>
             </SkillBadge>
             <span className="whitespace-pre-wrap"> and </span>
             <SkillBadge as="a" target="_blank" href="https://www.mongodb.com/">
               <div className="size-4 shrink-0">
                 <img src={mongoSvg} alt="mongodb-logo" />
               </div>
-              <p className="ml-1 text-sm font-bold">Mongodb. </p>
+              <p className="pl-1 text-sm font-bold">Mongodb. </p>
             </SkillBadge>
             <span className="whitespace-pre-wrap">
               With focus on{" "}
