@@ -7,7 +7,15 @@ import ProjectStatusBadge from "../common/ProjectStatusBadge";
 
 const ProjectCard = React.memo(({ project }) => {
   return (
+    
+    
+    
+    
+    
     <article className="group rounded-xl border flex flex-col gap-3 border-white/10 bg-white/5 p-4 transition hover:bg-white/10">
+    
+    
+    
       {/* Image */}
       <img
         src={project.image}
