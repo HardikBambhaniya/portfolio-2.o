@@ -5,11 +5,12 @@ function Preview() {
     
         <Typewriter
           text={[
-            "Frontend Developer",
-            "Mern Stack Developer",
+            "Frontend",
+            "Backend",
+            "Api Integration",
           ]}
           speed={70}
-          className="text-teal-500"
+          className="text-yellow-500"
           waitTime={1500}
           deleteSpeed={40}
           cursorChar={"_"}
