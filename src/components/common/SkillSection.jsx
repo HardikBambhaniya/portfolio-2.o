@@ -1,7 +1,10 @@
+// This file contain reusable code for Skills logo/label
+
+
 import { SKILLS } from "../../data/skills";
 import SkillBadge from "../SkillBadge";
 
-const SkillSection = ({ title, skillKeys }) => {
+const SkillSection = ({ skillKeys }) => {
   return (
     <div >
       
