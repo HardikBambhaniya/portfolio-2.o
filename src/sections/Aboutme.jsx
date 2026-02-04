@@ -1,10 +1,11 @@
 import { Preview } from "../components/Preview";
 import profileImg from "../assets/profilepic.avif";
+import { Button, WhatsappIcon } from "../components/ui";
 
 function Aboutme() {
   return (
     <>
-      <section className="w-full bg-black">
+      <section className="bg-black">
         <div className="max-w-4xl mx-auto pt-25 flex flex-col gap-2 justify-start px-2">
           <h2 className="text-xl font-bold font-montserrat text-white">Profile</h2>
           <div className=" gap-4 flex flex-col md:flex-row justify-evenly">
@@ -36,6 +37,19 @@ function Aboutme() {
                 </span>
                 Open to Work
               </div>
+              <a
+              href="https://wa.me/917016400658?"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="outline"
+                className="bg-black/90 text-white shadow-[inset_0_0_10px_rgba(255,255,255,0.6)] hover:shadow-[inset_0_0_15px_rgba(255,255,255,0.8)] hover:bg-black/90 hover:text-white "
+              >
+                <WhatsappIcon className="text-white" />
+                Get in Touch
+              </Button>
+            </a>
             </div>
           </div>
 
@@ -49,7 +63,7 @@ function Aboutme() {
                 <div className="text-neutral-200 text-base">
                   <h2>Sigma institute, Baroda(GTU).</h2>
                   <p>Bachelor of Engineering (IT)</p>
-                  <p className="text-sm text-neutral-400 pt-2">
+                  <p className="text-sm text-neutral-400">
   Focus Areas: Frontend Engineering • Modern Web Technologies
 </p>
                 </div>
@@ -61,13 +75,10 @@ function Aboutme() {
               <div className="text-base font-eb text-neutral-300 pt-4">
                 <ul className="list-disc px-4">
                   <li>
-                    Completed a summer internship focused on React.js, working
-                    with components, hooks, state management, and reusable UI
-                    patterns.
+                    Built a strong foundation in web development by learning and applying modern web technologies through hands-on projects.
                   </li>
                   <li>
-                    Contributed to two React-based projects, implementing
-                    responsive layouts and interactive user features.
+                    Built multiple real-world projects, strengthening practical problem-solving and development skills.
                   </li>
                 </ul>
               </div>
@@ -87,13 +98,10 @@ function Aboutme() {
               <div className="text-base font-eb text-neutral-300 pt-4">
                 <ul className="list-disc px-4">
                   <li>
-                    Developed and delivered multiple frontend applications using
-                    modern JavaScript, CSS, and Tailwind CSS, focusing on
-                    scalable and maintainable UI architecture.
+                    Gained strong foundational knowledge in core computer engineering subjects including OS, DBMS, Computer Networks, OOP, and Java.
                   </li>
                   <li>
-                    Implemented responsive design systems, structured reusable
-                    components, and optimized layouts across devices.
+                    Studied both basic and advanced software engineering concepts, focusing on scalable and structured application development.
                   </li>
                   
                 </ul>
