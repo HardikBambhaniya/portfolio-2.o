@@ -1,17 +1,20 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import { Navbar } from "./components/Navbar";
+ import { Navbar } from "./components/Navbar";
+
 import LandingPage from "./page/LandingPage";
 import Aboutme from "./sections/Aboutme";
 import Projects from "./sections/Projects";
 import Services from "./sections/Services";
-import Experience from "./sections/Experience";
-import Education from "./sections/Education";
+import ScrollToTop from "./components/common/ScrollToTop";
+
 
 
 function App() {
   return (
     <>
+    <ScrollToTop />
       <Navbar/>
+      
       
       <Routes>
         <Route path="/" element = {<>
