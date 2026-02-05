@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import LandingPage from "./page/LandingPage";
 import Aboutme from "./sections/Aboutme";
 import Projects from "./sections/Projects";
-import Services from "./sections/Services";
+// import Services from "./sections/Services";
 import ScrollToTop from "./components/common/ScrollToTop";
 
 
@@ -22,7 +22,7 @@ function App() {
         </>} />
         <Route path="/about" element = {<Aboutme/>} />
         <Route path="/projects" element = {<Projects/>} />
-        <Route path="/services" element = {<Services/>} />
+        {/* <Route path="/services" element = {<Services/>} /> */}
       </Routes>
     </>
   );

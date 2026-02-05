@@ -1,6 +1,7 @@
 //File that contain all projects data in single place for
 
 import mmImg from "../assets/Projectsimg/mmImg.webp";
+import tradingImg from "../assets/Projectsimg/tradingImg.webp";
 import eaImg from "../assets/Projectsimg/eventAgency.webp";
 import skipAdImg from "../assets/Projectsimg/skip-ad.webp"
 import lakeSideImg from "../assets/Projectsimg/lakesideImg.webp"
@@ -18,6 +19,15 @@ export const projects = [
     },
     {
         id: 2,
+        title: "Trading web-app",
+        description: "Developed a MERN stack trading simulation application modeling real-world trading workflows with responsive frontend and backend services.",
+        image: tradingImg,
+        status: "live",
+        skills: ["react", "tailwindcss", "github", "node", "express", "mongodb", "vercel",]
+        
+    },
+    {
+        id: 3,
         title: "Event-agency website",
         description: "A landing page website for a college event agency, built to present services, event highlights, and brand identity in a clean and engaging design.",
         image:  eaImg,
@@ -27,7 +37,7 @@ export const projects = [
         skills: ["react", "reactbits", "guthub", "swiperjs", "vercel", "tailwindcss", "motion"]
     },
     {
-        id: 3,
+        id: 4,
         title: "Auto Skip-ad Extension",
         description: "An auto-skip browser extension that detects and clicks the YouTube “Skip Ad” button to provide uninterrupted video playback.",
         image: skipAdImg,
@@ -36,7 +46,7 @@ export const projects = [
         
     },
     {
-        id: 4,
+        id: 5,
         title: "Lakeside Retreat",
         description: "A visually engaging GSAP-animated website designed for showcasing and booking a serene lakeside retreat.",
         image: lakeSideImg,
