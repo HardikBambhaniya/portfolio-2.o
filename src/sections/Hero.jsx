@@ -15,7 +15,7 @@ import mongoSvg from "../assets/Svgs/mongoSvg.svg";
 import nodeSvg from "../assets/Svgs/nodeSvg.svg";
 import reactSvg from "../assets/Svgs/reactSvg.svg";
 import IconTooltip from "../components/common/IconTooltip";
-import SkillSection from "../components/common/SkillSection";
+
 
 const social = [
   {
@@ -43,7 +43,7 @@ const social = [
 function Hero() {
   return (
     <>
-      <section className="mx-auto w-full flex flex-col justify-center items-center z-20 bg-black/70">
+      <section>
         {/* top-content */}
         <div className=" max-w-4xl flex flex-col justify-center px-2  gap-6 pt-25 ">
           {/* img-section */}
@@ -55,15 +55,16 @@ function Hero() {
             <img
               src={profilePic}
               alt="profilepic"
-              className=" h-30 w-30 rounded-full object-cover"
+              loading="eager"
+              className="h-30 w-30 rounded-full object-cover"
             />
           </div>
 
-          <h1 className="font-montserrat  text-4xl font-bold px-3 md:font-extrabold  text-white">
+          <h1 className="font-montserrat text-3xl md:text-4xl font-bold text-white">
             Hi, I'm Hardik -{" "}
             <i className="text-gray-300">A Frontend developer</i>
           </h1>
-          <div className="mt-4 max-w-lg md:max-w-4xl px-2 flex flex-wrap justify-start text-start gap-x-1.5 gap-y-2 text-base md:text-lg lg:text-xl text-neutral-200 font-eb">
+          <div className="mt-4 max-w-lg md:max-w-4xl px-2 flex flex-wrap justify-start text-start gap-x-1.5 gap-y-2 text-base md:text-lg lg:text-xl text-neutral-200 ">
             <span>I build interactive websites with</span>
             <SkillBadge
               as="a"
@@ -117,7 +118,7 @@ function Hero() {
           </div>
 
           {/* Buttons */}
-          <div className=" w-full flex justify-start gap-x-4 px-2 font-eb font-extrabold">
+          <div className=" w-full flex justify-start gap-x-4 px-2  font-extrabold">
             <a href="#work">
               <Button
                 variant="outline"
@@ -150,102 +151,6 @@ function Hero() {
                 {item.icon}
               </IconTooltip>
             ))}
-          </div>
-
-          {/* skills-section */}
-          <div className="mt-20 px-2 max-w-4xl flex flex-col gap-2 justify-start text-white">
-            <div className="text-xl font-bold font-montserrat">
-              <h2>Skills & Technologies</h2>
-            </div>
-
-            <SkillSection
-              skillKeys={[
-                "javascript",
-                "react",
-                "node",
-                "express",
-                "mongodb",
-                "redux",
-                "tailwindcss",
-                "shadcn",
-                "gsap",
-                "motion",
-                "framer",
-                "git",
-                "github",
-                "vite",
-                "vercel",
-                "vscode",
-                "postman",
-              ]}
-            />
-
-          </div>
-
-          {/* experience-section */}
-          <div className="mt-20 px-2 max-w-4xl flex flex-col gap-2 justify-start text-white">
-            <div className="text-xl font-bold font-montserrat">
-              <h2>Experience</h2>
-            </div>
-            <div>
-              <div className="flex flex-col xs:flex-row justify-between">
-                <div className="text-neutral-200 text-base">
-                  <h2>INFOLABZ IT SERVICES PVT. LTD.</h2>
-                  <p>React.js Developer Intern</p>
-                </div>
-                <div className="text-neutral-200 text-base">
-                  <h2 className="">July - 2025</h2>
-                  <p>Ahmedabad (Remote)</p>
-                </div>
-              </div>
-              <div className="text-base font-eb text-neutral-300 pt-4">
-                <ul className="list-disc px-4">
-                  <li>
-                    Completed a summer internship focused on React.js, working
-                    with components, hooks, state management, and reusable UI
-                    patterns.
-                  </li>
-                  <li>
-                    Contributed to two React-based projects, implementing
-                    responsive layouts and interactive user features.
-                  </li>
-                  <li>
-                    Strengthened understanding of component-based architecture
-                    and modern frontend development best practices.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div>
-              <div className="pt-10 flex flex-col xs:flex-row justify-between">
-                <div className="text-neutral-200 text-base">
-                  <h2>PRODIGY INFOTECH</h2>
-                  <p>Frontend Developer Intern</p>
-                </div>
-                <div className="text-neutral-200 text-base">
-                  <h2 className="">April 2024 - May 2024</h2>
-                  <p>Mumbai (Remote)</p>
-                </div>
-              </div>
-              <div className="text-base font-eb text-neutral-300 pt-4">
-                <ul className="list-disc px-4">
-                  <li>
-                    Developed and delivered multiple frontend applications using
-                    modern JavaScript, CSS, and Tailwind CSS, focusing on
-                    scalable and maintainable UI architecture.
-                  </li>
-                  <li>
-                    Implemented responsive design systems, structured reusable
-                    components, and optimized layouts across devices.
-                  </li>
-                  <li>
-                    Applied end-to-end frontend workflows, including component
-                    organization, styling strategy, and deployment practices.
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </section>
