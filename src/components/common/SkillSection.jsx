@@ -18,7 +18,7 @@ const SkillSection = ({ skillKeys }) => {
           return (
             <SkillBadge key={key} className="gap-x-2">
               <img
-                className="h-4"
+                className="h-4 w-4"
                 src={skill.icon}
                 alt={`${skill.label}-logo`}
               />
