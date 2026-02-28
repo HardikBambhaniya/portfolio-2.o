@@ -13,8 +13,8 @@ function SkillContainer () {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="mt-20 px-2 max-w-4xl flex flex-col gap-2 justify-start text-white"
           >
-            <div className="text-xl font-bold font-montserrat">
-              <h2>Skills & Technologies</h2>
+            <div className="text-xl font-bold ">
+              <h2>Tools & Technologies</h2>
             </div>
 
             <SkillSection
