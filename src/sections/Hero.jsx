@@ -15,6 +15,7 @@ import mongoSvg from "../assets/Svgs/mongoSvg.svg";
 import nodeSvg from "../assets/Svgs/nodeSvg.svg";
 import reactSvg from "../assets/Svgs/reactSvg.svg";
 import IconTooltip from "../components/common/IconTooltip";
+import { motion } from "framer-motion";
 
 
 const social = [
@@ -45,7 +46,13 @@ function Hero() {
     <>
       <section>
         {/* top-content */}
-        <div className=" max-w-4xl flex flex-col justify-center px-2  gap-6 pt-25 ">
+        <motion.div 
+         initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+
+        className=" max-w-4xl flex flex-col justify-center px-2  gap-6 pt-25 ">
           {/* img-section */}
 
           <div
@@ -58,12 +65,12 @@ function Hero() {
               loading="eager"
               className="h-30 w-30 rounded-full object-cover"
             />
-          </div>
+          </div> 
 
-          <h1 className="font-montserrat text-3xl md:text-4xl font-bold text-white">
+          <h2 className=" text-3xl md:text-4xl font-bold text-white">
             Hi, I'm Hardik -{" "}
             <i className="text-gray-300">A Frontend developer</i>
-          </h1>
+          </h2>
           <div className="mt-4 max-w-lg md:max-w-4xl px-2 flex flex-wrap justify-start text-start gap-x-1.5 gap-y-2 text-base md:text-lg lg:text-xl text-neutral-200 ">
             <span>I build interactive websites with</span>
             <SkillBadge
@@ -152,7 +159,7 @@ function Hero() {
               </IconTooltip>
             ))}
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

@@ -10,7 +10,7 @@ function Experience() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="mt-20 px-2 max-w-4xl flex flex-col gap-2 justify-start text-white"
           >
-            <div className="text-xl font-bold font-montserrat">
+            <div className="text-xl font-bold">
               <h2>Experience</h2>
             </div>
             <div>
@@ -24,7 +24,7 @@ function Experience() {
                   <p>Ahmedabad (Remote)</p>
                 </div>
               </div>
-              <div className="text-base font-eb text-neutral-300 pt-4">
+              <div className="text-base  text-neutral-300 pt-4">
                 <ul className="list-disc px-4">
                   <li>
                     Completed a summer internship focused on React.js, working
@@ -54,7 +54,7 @@ function Experience() {
                   <p>Mumbai (Remote)</p>
                 </div>
               </div>
-              <div className="text-base font-eb text-neutral-300 pt-4">
+              <div className="text-base  text-neutral-300 pt-4">
                 <ul className="list-disc px-4">
                   <li>
                     Developed and delivered multiple frontend applications using

@@ -6,7 +6,7 @@ const Experience = lazy(() => import("../sections/Experience.jsx"));
 function LandingPage() {
   return (
     <>
-      <div className="mx-auto w-full flex flex-col justify-center items-center z-20 bg-black">
+      <div className="mx-auto max-w-4xl flex flex-col justify-center items-center z-20">
         <Hero />
         <Suspense fallback={<div className="text-white mt-20">Loading...</div>}>
           <Skills />
