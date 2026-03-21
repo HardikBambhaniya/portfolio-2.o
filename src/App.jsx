@@ -3,8 +3,8 @@ import { Routes, Route} from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 
 import LandingPage from "./page/LandingPage";
-import Aboutme from "./sections/Aboutme";
-import Projects from "./sections/Projects";
+const Aboutme = lazy(() => import("./sections/Aboutme"));
+const Projects = lazy(() => import("./sections/Projects"));
 
 
 
