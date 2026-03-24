@@ -1,4 +1,4 @@
-import profilePic from "../assets/profilepic.avif";
+import profilePic from "/profilepic.avif";
 import SkillBadge from "../components/SkillBadge";
 import {
   Button,

@@ -1,5 +1,5 @@
 import { Preview } from "../components/Preview";
-import profileImg from "../assets/profilepic.avif";
+import profileImg from "/profilepic.avif";
 import { Button, WhatsappIcon } from "../components/ui";
 import { motion } from "framer-motion";
 
