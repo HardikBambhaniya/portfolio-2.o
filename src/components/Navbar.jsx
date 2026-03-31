@@ -44,7 +44,7 @@ const glowSoft = scrolled ? "bg-yellow-200" : "bg-white/20"
       className={`
         w-screen sm:max-w-4xl fixed top-2 left-1/2 -translate-x-1/2 z-50
         font-montserrat text-white
-        sm:w-[95vw] px-2 transition-all duration-1200
+        sm:w-[95vw] px-2 transition-all duration-1000
         ${
           scrolled
             ? "mt-4 scale-[0.96] shadow-lg backdrop-blur-md bg-white/10 rounded-2xl"
@@ -68,8 +68,8 @@ const glowSoft = scrolled ? "bg-yellow-200" : "bg-white/20"
                     className="absolute left-0 right-0 -top-1 rounded-full"
                     transition={{
                       type: "spring",
-                      stiffness: 300,
-                      damping: 30,
+                      stiffness: 200,
+                      damping: 40,
                     }}
                   >
                     
