@@ -127,6 +127,7 @@ This project follows a modular React architecture, separating reusable component
 ⚙️ Installation & Setup
 Clone the repository:
 git clone https://github.com/<your-username>/Portfolio-2.0.git
+
 Navigate into the project folder:
 cd Portfolio-2.0
 Install dependencies:
@@ -135,30 +136,19 @@ Run the development server:
 npm run dev
 Open in browser:
 http://localhost:5173
+
 🚀 Usage
-Update project details in src/data/projects.js
-Add skills in src/data/skills.js
-Add new sections in src/sections if needed
-Replace profile picture in src/assets/profilepic.avif
-Replace or add project images in src/assets/Projectimg
+->Update project details in src/data/projects.js
+->Add skills in src/data/skills.js
+->Add new sections in src/sections if needed
+->Replace profile picture in src/assets/profilepic.avif
+R->eplace or add project images in src/assets/Projectimg
+
 🔮 Future Improvements
-Add dark/light mode toggle
-Add animations using Framer Motion
-Add contact form integration
-Optimize Lighthouse performance for faster loading
-Add multi-language support
-👤 Author
+->Add dark/light mode toggle
+->Add animations using Framer Motion
+->Add contact form integration
+->Optimize Lighthouse performance for faster loading
+->Add multi-language support
 
-Hardik Bambhaniya
-
-GitHub: [Your GitHub Profile]
-Email: hardikb181@gmail.com
-Portfolio: [Your Live Portfolio Link]
-
-
-
-
-
-
-    → Project documentation and setup instructions.
 ```
