@@ -131,7 +131,7 @@ const ProjectCard = React.memo(({ project }) => {
         </div>
 
         {/* Description */}
-        <p className="font-eb text-neutral-200">{project.description}</p>
+        <p className="font-eb text-neutral-400">{project.description}</p>
 
         {/* Skills */}
         <span className="text-neutral-400">Technologies</span>
