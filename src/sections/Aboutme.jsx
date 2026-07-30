@@ -76,8 +76,8 @@ function Aboutme() {
 </p>
                 </div>
                 <div className="text-neutral-200 text-base">
-                  <h2 className="">July 2023 - July 2026(Expected)</h2>
-                  <p>Current CGPA: 8.14/10</p>
+                  <h2 className="">July 2023 - sep. 2026(Expected)</h2>
+                  <p>Current CGPA: 8.27/10</p>
                 </div>
               </div>
               <div className="text-base font-eb text-neutral-300 pt-4">

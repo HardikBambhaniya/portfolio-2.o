@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route} from "react-router-dom";
 import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
 
 import LandingPage from "./page/LandingPage";
 const Aboutme = lazy(() => import("./sections/Aboutme"));
@@ -25,6 +26,7 @@ function App() {
           </Routes>
         
       </Suspense>
+      <Footer/>
     </>
   );
 }
