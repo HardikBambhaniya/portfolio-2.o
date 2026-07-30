@@ -20,6 +20,9 @@ import vscodeSvg from "../assets/Svgs/vscodeSvg.svg";
 import cssSvg from "../assets/Svgs/cssSvg.svg";
 import chromeSvg from "../assets/Svgs/chromeSvg.svg";
 import swiperjsSvg from "../assets/Svgs/swiperjsSvg.svg";
+import ollama from "../assets/Svgs/ollama.svg"
+import openai from "../assets/Svgs/openai.svg"
+import cloudinary from "../assets/Svgs/cloudinary.svg"
 
 export const SKILLS = {
     react: {
@@ -109,6 +112,18 @@ export const SKILLS = {
         label: "Postman",
         icon: postmanSvg
     },
+    ollama: {
+        label: "ollama-LLM",
+        icon: ollama,
+    },
+     openai: {
+        label: "openAi",
+        icon: openai,
+    },
+    cloudinary: {
+        label: "cloudinary",
+        icon: cloudinary,
+    }
     
     
 }

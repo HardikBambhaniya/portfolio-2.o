@@ -23,7 +23,10 @@ function SkillContainer () {
                 "react",
                 "node",
                 "express",
+                "ollama",
+                "openai",
                 "mongodb",
+                "cloudinary",
                 "redux",
                 "tailwindcss",
                 "shadcn",
@@ -36,6 +39,7 @@ function SkillContainer () {
                 "vercel",
                 "vscode",
                 "postman",
+                
               ]}
             />
           </motion.div>
