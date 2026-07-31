@@ -126,7 +126,7 @@ function Hero() {
 
           {/* Buttons */}
           <div className=" w-full flex justify-start gap-x-4 px-2  font-extrabold">
-            <a href="/Hardik_Bambhaniya_cv.pdf" download>
+            <a href="/Hardik_Bambhaniya_Full_stack_javascript_developer.pdf" download>
               <Button
                 variant="outline"
                 className=" bg-white/75 cursor-pointer "
