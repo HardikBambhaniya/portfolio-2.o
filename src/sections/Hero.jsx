@@ -14,6 +14,8 @@ import tailwindSvg from "../assets/Svgs/tailwindSvg.svg";
 import mongoSvg from "../assets/Svgs/mongoSvg.svg";
 import nodeSvg from "../assets/Svgs/nodeSvg.svg";
 import reactSvg from "../assets/Svgs/reactSvg.svg";
+import ollamaSvg from "../assets/Svgs/ollama.svg";
+import openaiSvg from "../assets/Svgs/openai.svg";
 import IconTooltip from "../components/common/IconTooltip";
 import { motion } from "framer-motion";
 
@@ -36,7 +38,7 @@ const social = [
   },
   {
     href: "mailto:hardikb181@gmail.com",
-    label: "G-mail",
+    label: "Email",
     icon: <MailCheckIcon />,
   },
 ];
@@ -61,7 +63,7 @@ function Hero() {
           >
             <img
               src={profilePic}
-              alt="profilepic"
+              alt="Hardik Bambhaniya"
               loading="eager"
               className="h-30 w-30 rounded-full object-cover"
             />
@@ -69,10 +71,10 @@ function Hero() {
 
           <h2 className=" text-3xl md:text-4xl font-bold text-white">
             Hi, I'm Hardik -{" "}
-            <i className="text-gray-300">A Frontend developer</i>
+            <i className="text-gray-300">A Fullstack Javascript Developer</i>
           </h2>
           <div className="mt-4 max-w-lg md:max-w-4xl px-2 flex flex-wrap justify-start text-start gap-x-1.5 gap-y-2 text-base md:text-lg lg:text-xl text-neutral-200 ">
-            <span>I build interactive websites with</span>
+            <span>I build scalable full-stack websites/apps with</span>
             <SkillBadge
               as="a"
               target="_blank"
@@ -96,6 +98,20 @@ function Hero() {
                 <img src={nodeSvg} alt="nodejs-logo" />
               </div>
               <p className="pl-1 text-sm font-bold">Node.js</p>
+            </SkillBadge>
+            <span className="whitespace-pre-wrap">, </span>
+            <SkillBadge as="a" target="_blank" href="https://ollama.com/">
+              <div className="size-4 shrink-0">
+                <img src={ollamaSvg} alt="ollama-logo" />
+              </div>
+              <p className="pl-1 text-sm font-bold">ollama-LLMs</p>
+            </SkillBadge>
+            <span className="whitespace-pre-wrap">, </span>
+            <SkillBadge as="a" target="_blank" href="https://openai.com/api/">
+              <div className="size-4 shrink-0">
+                <img src={openaiSvg} alt="openai-logo" />
+              </div>
+              <p className="pl-1 text-sm font-bold">Openai</p>
             </SkillBadge>
             <span className="whitespace-pre-wrap">, </span>
             <SkillBadge as="a" target="_blank" href="https://tailwindcss.com/">
@@ -136,7 +152,7 @@ function Hero() {
               </Button>
             </a>
             <a
-              href="https://wa.me/917016400658?"
+              href="https://wa.me/917016400658"
               target="_blank"
               rel="noopener noreferrer"
             >

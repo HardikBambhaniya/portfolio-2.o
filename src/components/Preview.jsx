@@ -8,6 +8,7 @@ function Preview() {
             "Frontend",
             "Backend",
             "Api Integration",
+            "Openai/LLMs integration",
           ]}
           speed={70}
           className="text-yellow-500"

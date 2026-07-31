@@ -18,7 +18,7 @@ function Aboutme() {
             <div className=" ">
               <img
                 src={profileImg}
-                alt="profile-pic"
+                alt="Hardik Bambhaniya"
                 loading="lazy"
                 width={280}
                 fetchPriority="high"
@@ -30,9 +30,9 @@ function Aboutme() {
                 Hardik Bambhaniya
               </h3>
               <p>
-                Frontend Developer specializing in beautiful, interactive UIs
+                Fullstack js developer specializing in beautiful, interactive UIs
                 with React, JavaScript, GSAP, and modern UI libraries, while
-                also handling backend logic, API integration, and state
+                also handling backend logic, REST APIs, Opanai and LLM integration, and state
                 management for complete web applications.
               </p>
               <h4>
