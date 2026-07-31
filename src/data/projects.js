@@ -4,6 +4,7 @@ import ccVid from "../assets/ProjectRecordings/cc-recording.mp4"
 import ccImg from "../assets/Projectsimg/clipCaptionly.webp"
 import mmImg from "../assets/Projectsimg/mmImg.webp";
 import tradingImg from "../assets/Projectsimg/tradingImg.webp";
+import taVid from "../assets/ProjectRecordings/ta-recording.mp4"
 import eaImg from "../assets/Projectsimg/eventAgency.webp";
 import eaVid from "../assets/ProjectRecordings/ea-recording.mp4";
 import skipAdImg from "../assets/Projectsimg/skip-ad.webp";
@@ -109,8 +110,10 @@ export const projects = [
     description:
       "Developed a MERN stack trading simulation application modeling real-world trading workflows with responsive frontend and backend services.",
     image: tradingImg,
+    video: taVid,
     status: "completed",
     skills: [
+      "javascript",
       "react",
       "tailwindcss",
       "github",
