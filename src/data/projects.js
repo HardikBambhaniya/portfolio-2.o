@@ -20,6 +20,7 @@ export const projects = [
     image: ccImg,
     video: ccVid,
     status: "in-progress",
+    liveUrl: "https://www.clipcaptionly.online",
     skills: [
       "react",
       "tailwindcss",
@@ -42,7 +43,7 @@ export const projects = [
       "Mane & More is an online hair extension store for women, built as a freelance project for a Canadian client, featuring premium products and a modern, responsive, user-friendly shopping experience.",
     image: mmImg,
     status: "in-progress",
-    liveUrl: "https://www.maneandmore.shop/",
+    liveUrl: "https://www.maneandmore.shop",
     skills: [
       "react",
       "css",
@@ -64,7 +65,7 @@ export const projects = [
     image: lakeSideImg,
     video: lrVid,
     status: "live",
-    liveUrl: "https://lakeside-retreat.vercel.app/",
+    liveUrl: "https://lakeside-retreat.vercel.app",
     githubUrl: "https://github.com/HardikBambhaniya/Lakeside-Retreat",
     skills: ["react", "tailwindcss", "github", "gsap"],
   },
@@ -77,7 +78,7 @@ export const projects = [
     image: eaImg,
     video: eaVid,
     status: "live",
-    liveUrl: "https://eventagency.vercel.app/",
+    liveUrl: "https://eventagency.vercel.app",
     githubUrl: "https://github.com/HardikBambhaniya/eventagency/tree/main",
     skills: [
       "react",
