@@ -19,7 +19,7 @@ export const projects = [
       "Clip Captionly is an AI-powered SaaS that transforms short videos into engaging social media content by generating accurate subtitles, SEO-friendly titles, descriptions, hashtags, and key takeaways using AI transcription and language models.",
     image: ccImg,
     video: ccVid,
-    status: "in-progress",
+    status: "live",
     liveUrl: "https://www.clipcaptionly.online",
     skills: [
       "react",
