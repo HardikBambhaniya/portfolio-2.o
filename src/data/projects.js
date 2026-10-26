@@ -16,7 +16,7 @@ export const projects = [
     id: 1,
     title: "Clip Captionly",
     description:
-      "Clip Captionly is an AI-powered SaaS that transforms short videos into engaging social media content by generating accurate subtitles, SEO-friendly titles, descriptions, hashtags, and key takeaways using AI transcription and language models.",
+      "Clip Captionly is an AI-powered SaaS that transforms short videos into engaging social media content by generating accurate stylish subtitles, SEO-friendly titles, descriptions, hashtags, and key takeaways using AI transcription and language models.",
     image: ccImg,
     video: ccVid,
     status: "live",
